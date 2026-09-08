@@ -73,7 +73,7 @@ export default function HomePage() {
             <pre className="codeBlock" aria-hidden="true">
 {`{
   role: "Full-Stack Engineer",
-  experience: "7+ years",
+  experience: "8+ years",
   core: [
     "React / Next.js",
     "TypeScript",

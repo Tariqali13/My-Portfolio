@@ -65,7 +65,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({
       ok: true,
-      message: "Thanks — your message has been sent successfully.",
+      message: "Thanks - your message has been sent successfully.",
     });
   } catch (error) {
     console.error("Contact form error:", error);

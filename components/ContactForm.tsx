@@ -43,7 +43,7 @@ export function ContactForm() {
       form.reset();
       setState({
         status: "success",
-        message: result.message || "Thanks — your message has been sent.",
+        message: result.message || "Thanks - your message has been sent.",
       });
     } catch (error) {
       setState({

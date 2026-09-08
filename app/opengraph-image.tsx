@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Tariq Ali — Full-Stack Software Engineer";
+export const alt = "Tariq Ali - Full-Stack Software Engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,7 +38,7 @@ export default function Image() {
           React · Next.js · TypeScript · Node.js · AWS
         </div>
         <div style={{ fontSize: 22, color: "#94a3b8", marginTop: 48 }}>
-          7+ years building SaaS and scalable web products
+          8+ years building SaaS and scalable web products
         </div>
       </div>
     ),

@@ -4,9 +4,9 @@ export const profile = {
   headline:
     "I build reliable, scalable web products with React, Next.js, TypeScript, Node.js and AWS.",
   intro:
-    "Full-Stack Software Engineer with 7+ years of experience delivering SaaS, ticketing, e-commerce, fintech, healthcare, CMS and AI-enabled products for international teams. I work across product engineering, architecture, APIs, cloud services, testing and technical leadership.",
+    "Full-Stack Software Engineer with 8+ years of experience delivering SaaS, ticketing, e-commerce, fintech, healthcare, CMS and AI-enabled products for international teams. I work across product engineering, architecture, APIs, cloud services, testing and technical leadership.",
   location: "Lahore, Pakistan",
-  availability: "Open to senior engineering roles — remote or relocation",
+  availability: "Available immediately for remote roles; open to relocation with sponsorship",
   email: "tariqali99.ta@gmail.com",
   phoneDisplay: "+92 310 4832079",
   whatsapp: "https://wa.me/923104832079",
@@ -18,7 +18,7 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "7+", label: "Years in software engineering" },
+  { value: "8+", label: "Years in software engineering" },
   { value: "10", label: "Engineers led on a product team" },
   { value: "80%", label: "Approx. Vonza platform development led" },
   { value: "Global", label: "Remote client & team experience" },
@@ -80,8 +80,12 @@ export const skillGroups = [
       "GitLab CI",
       "Agile",
       "Code Review",
+      "Prometheus",
+      "Grafana",
+      "WCAG Accessibility",
     ],
   },
+  { title: "AI-assisted Development", items: ["Codex", "Claude"] },
 ];
 
 export const projects = [
@@ -92,11 +96,11 @@ export const projects = [
     summary:
       "Production engineering for a large-scale event-ticketing ecosystem, spanning customer-facing experiences, APIs, service integrations and automated testing.",
     impact: [
-      "Delivered reusable React/Next.js application patterns for complex ticketing workflows.",
-      "Worked across microservices and AWS-backed systems with U.S.-based stakeholders.",
-      "Implemented AWS Lambda automation supporting more efficient repository and service workflows.",
+      "Built installment payment schedules across cart, order and checkout, with a production rollout to seven Division-I athletic programs.",
+      "Shipped all-included pricing used during onsales of approximately 3,000 tickets in 15 minutes, with 4,000+ users queued and no reported issues.",
+      "Migrated order confirmation to GraphQL and delivered add-on purchasing, accessibility improvements and automated regression coverage.",
     ],
-    tech: ["React", "Next.js", "TypeScript", "Node.js", "GraphQL", "REST", "AWS", "Jest"],
+    tech: ["React", "Next.js", "TypeScript", "Node.js", "GraphQL", "AWS", "Nightwatch", "Prometheus", "Grafana"],
     featured: true,
   },
   {
@@ -104,7 +108,7 @@ export const projects = [
     name: "Vonza",
     eyebrow: "All-in-one SaaS",
     summary:
-      "A multi-module platform for online courses, stores, websites, memberships, funnels and marketing — built while working closely with company leadership.",
+      "A multi-module platform for online courses, stores, websites, memberships, funnels and marketing - built while working closely with company leadership.",
     impact: [
       "Led a team of up to 10 engineers.",
       "Owned architecture and a substantial portion of the production platform.",
@@ -174,19 +178,21 @@ export const projects = [
 export const experience = [
   {
     role: "Full-Stack Software Engineer",
-    company: "FullStack Labs",
+    company: "Paciolan (via FullStack Labs)",
     location: "Remote / United States",
-    dates: "May 2022 — Present",
+    dates: "May 2022 - Sep 2026",
     bullets: [
-      "Contribute to Paciolan's large-scale event-ticketing ecosystem across React/Next.js front ends, APIs and distributed services.",
-      "Build reusable application patterns and collaborate with product, design, QA and back-end engineering teams.",
-      "Develop automated testing with Jest and related tooling to improve release confidence.",
-      "Work directly with U.S.-based stakeholders in technical discussions, estimation, code reviews and iterative delivery.",
+      "Built RSD Payment Schedules across cart, order, checkout and confirmation for season-ticket donations; launched to seven Division-I athletic programs and executed the production feature-flag rollout.",
+      "Delivered all-included pricing across event pages, seat maps and mini-cart, used during onsales of approximately 3,000 tickets in 15 minutes with 4,000+ users queued and no reported issues.",
+      "Migrated order confirmation from direct REST calls to GraphQL, authored fundraising resolvers and built add-on purchasing with validation, fee breakdowns and email handling.",
+      "Resolved payment defects involving timezones, installment amounts and donation allocation. Added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and remediated an SSRF/input-injection vector.",
+      "Delivered WCAG/ADA accessibility fixes and GA4 purchase analytics; integrated Nightwatch/Selenium regression tests into deployment pipelines.",
+      "Worked across 20+ repositories, extracted shared payment utilities, consolidated translations across four frontends, and coordinated production deployments and cross-team code reviews.",
     ],
     tech: ["React", "Next.js", "TypeScript", "Node.js", "AWS", "GraphQL", "Jest"],
   },
   {
-    role: "Frontend Engineer — Contract",
+    role: "Frontend Engineer - Contract",
     company: "Supercoder / Learning Crew",
     location: "Remote / South Korea",
     dates: "Jan 2026 - March 2026",
@@ -197,10 +203,10 @@ export const experience = [
     tech: ["React", "React Query", "Swagger", "REST APIs"],
   },
   {
-    role: "Frontend Developer — Contract",
+    role: "Frontend Developer - Contract",
     company: "Supercoder / Hooaah",
     location: "Remote / South Korea",
-    dates: "Nov 2023 — Jul 2024",
+    dates: "Nov 2023 - Jul 2024",
     bullets: [
       "Built and enhanced reusable React modules and integrated back-end functionality into product experiences.",
       "Improved component reuse and code organization for continued feature development.",
@@ -209,9 +215,9 @@ export const experience = [
   },
   {
     role: "Full-Stack Engineer",
-    company: "Fiverr — Independent Client Work",
+    company: "Fiverr - Independent Client Work",
     location: "Remote",
-    dates: "Dec 2018 — Apr 2023",
+    dates: "Dec 2018 - Apr 2023",
     bullets: [
       "Delivered end-to-end applications for international clients, covering architecture, development, deployment, CMS, integrations and support.",
       "Built photography, solar/electrical business and real-estate platforms with booking, content and administration workflows.",
@@ -222,7 +228,7 @@ export const experience = [
     role: "Full-Stack Engineer",
     company: "ShopDev",
     location: "Lahore, Pakistan",
-    dates: "Oct 2021 — Apr 2022",
+    dates: "Oct 2021 - Apr 2022",
     bullets: [
       "Led Shopdesk inventory and sales workflows including calculations, barcode functionality and offline sales.",
       "Built customized React extensions for Amyris and integrated them with Shopify-based applications.",
@@ -233,7 +239,7 @@ export const experience = [
     role: "Senior Full-Stack Engineer",
     company: "Renesis Tech",
     location: "Lahore, Pakistan",
-    dates: "Jul 2021 — Aug 2021",
+    dates: "Jul 2021 - Aug 2021",
     bullets: [
       "Delivered Photobank end to end using React/Next.js, Node.js and AWS.",
       "Implemented Rekognition face search, Lambda-based image processing and a reusable Stripe microservice.",
@@ -244,7 +250,7 @@ export const experience = [
     role: "Senior Full-Stack Engineer / Team Lead",
     company: "Innovation Insight",
     location: "Lahore, Pakistan",
-    dates: "Oct 2019 — Jul 2021",
+    dates: "Oct 2019 - Jul 2021",
     bullets: [
       "Led major development of Vonza and a team of up to 10 engineers.",
       "Worked directly with the CEO/CTO on architecture, subdomain routing, a website builder, payments, security and scalability.",
@@ -256,7 +262,7 @@ export const experience = [
     role: "Senior Full-Stack Engineer",
     company: "RSglowtech",
     location: "Lahore, Pakistan",
-    dates: "Dec 2020 — May 2021",
+    dates: "Dec 2020 - May 2021",
     bullets: [
       "Led teams of 6–8 across healthcare and trading-style products.",
       "Integrated third-party music/data APIs and built scheduled Node.js processing utilities.",
@@ -267,7 +273,7 @@ export const experience = [
     role: "Full-Stack Engineer",
     company: "Vvork Cloud Technologies",
     location: "Lahore, Pakistan",
-    dates: "Jan 2018 — Dec 2018",
+    dates: "Jan 2018 - Dec 2018",
     bullets: [
       "Developed a student-management portal, delivered new features and resolved complex defects.",
       "Collaborated with solution architects to align technical architecture with business requirements.",
@@ -284,7 +290,7 @@ export const education = {
 };
 
 export const certifications = [
-  "Microsoft Exam 480 — Programming in HTML5 with JavaScript and CSS3 (2019)",
-  "Full-Stack Engineering — Mangtas (2023)",
-  "English Speaking — Emmersion (2023)",
+  "Microsoft Exam 480 - Programming in HTML5 with JavaScript and CSS3 (2019)",
+  "Full-Stack Engineering - Mangtas (2023)",
+  "English Speaking - Emmersion (2023)",
 ];

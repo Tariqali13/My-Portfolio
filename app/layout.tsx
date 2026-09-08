@@ -9,11 +9,11 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://tariqali.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Tariq Ali — Full-Stack Software Engineer",
+    default: "Tariq Ali - Full-Stack Software Engineer",
     template: "%s | Tariq Ali",
   },
   description:
-    "Full-Stack Software Engineer with 7+ years of experience building SaaS, ticketing, e-commerce, fintech, healthcare and AI-enabled web products with React, Next.js, TypeScript, Node.js and AWS.",
+    "Full-Stack Software Engineer with 8+ years of experience building SaaS, ticketing, e-commerce, fintech, healthcare and AI-enabled web products with React, Next.js, TypeScript, Node.js and AWS.",
   keywords: [
     "Tariq Ali",
     "Full-Stack Engineer",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   creator: profile.name,
   openGraph: {
     type: "website",
-    title: "Tariq Ali — Full-Stack Software Engineer",
+    title: "Tariq Ali - Full-Stack Software Engineer",
     description:
       "React, Next.js, TypeScript, Node.js, AWS and scalable product engineering.",
     url: siteUrl,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tariq Ali — Full-Stack Software Engineer",
+    title: "Tariq Ali - Full-Stack Software Engineer",
     description:
       "React, Next.js, TypeScript, Node.js, AWS and scalable product engineering.",
   },
