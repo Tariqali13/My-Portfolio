@@ -1,93 +1,538 @@
-%PDF-1.4
-%“Œ‹ž ReportLab Generated PDF document (opensource)
+%PDF-1.3
+%âãÏÓ
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R
+/PageMode /UseNone
+/Pages 2 0 R
+/Type /Catalog
 >>
 endobj
 2 0 obj
 <<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+/Count 2
+/Kids [ 3 0 R 8 0 R ]
+/Type /Pages
 >>
 endobj
 3 0 obj
 <<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+/Contents 4 0 R
+/MediaBox [ 0 0 595 842 ]
+/Parent 2 0 R
+/Resources <<
+/Font 5 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ 11 0 R ]
 >>
 endobj
 4 0 obj
 <<
-/Contents 9 0 R /MediaBox [ 0 0 595 842 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
+/Length 5467
 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F1 8 Tf 9.6 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 550.552 24 Tm (1) Tj T* ET
+q
+1 0 0 1 46 786 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4 Tm /F2 18 Tf 22 TL 206.5 0 Td (TARIQ ALI) Tj T* -206.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 46 768 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Full-Stack Software Engineer | React, Next.js, TypeScript, Node.js) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 751 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Lahore, Pakistan | +92 310 4832079 | tariqali99.ta@gmail.com) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 734 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (tariqali.dev | linkedin.com/in/tariq-ali-116678156 | github.com/Tariqali13) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 711 cm
+q
+.090196 .219608 .321569 rg
+BT 1 0 0 1 0 4 Tm /F2 10 Tf 14 TL (PROFILE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 670 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 27 Tm /F1 9 Tf 12 TL -0.031571 Tw (Full-stack engineer with 8+ years building SaaS, ticketing, commerce, and client applications. Experience across React/Next.js) Tj T* 0 Tw (interfaces, Node.js microservices, GraphQL, databases, AWS, and automated testing. Delivered payment and checkout) Tj T* (features in production and led teams of up to 10 engineers.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 647 cm
+q
+.090196 .219608 .321569 rg
+BT 1 0 0 1 0 4 Tm /F2 10 Tf 14 TL (TECHNICAL SKILLS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 630 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Frontend: React, Next.js, TypeScript, JavaScript, Redux, Zustand, React Query, HTML/CSS, Tailwind CSS, Material UI) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 601 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Backend and cloud: Node.js, Express, REST, GraphQL/Apollo, PostgreSQL, MySQL, MongoDB, Redis, AWS) Tj T* (S3/Lambda/EC2/CloudFront, Docker) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 572 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Quality and delivery: Jest, React Testing Library, Nightwatch/Selenium, GitHub Actions, GitLab CI, Prometheus, Grafana,) Tj T* (accessibility, GA4, Stripe, PayPal) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 555 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (AI-assisted development: Hands-on experience with Codex and Claude) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 532 cm
+q
+.090196 .219608 .321569 rg
+BT 1 0 0 1 0 4 Tm /F2 10 Tf 14 TL (PROFESSIONAL EXPERIENCE) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 513 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Software Engineer | Paciolan \(via FullStack Labs\), Order Team) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 498 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Remote / United States | May 2022 - Sep 2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 469 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Built RSD Payment Schedules across cart, order, checkout, and confirmation, supporting installment payments for) Tj T* (season-ticket donations; launched to seven Division-I athletic programs and executed the production feature-flag rollout.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 440 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Shipped all-included ticket, donation, and fee pricing across event pages, seat maps, mini-cart, and zone modals. These) Tj T* (features ran during onsales of approximately 3,000 tickets in 15 minutes with 4,000+ users queued and no reported issues.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 411 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Migrated order confirmation from direct REST calls to GraphQL, authored fundraising resolvers, and delivered add-on) Tj T* (purchasing with quantity validation, item comments, fee breakdowns, and confirmation-email handling.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 370 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 27 Tm /F1 9 Tf 12 TL (\177 Fixed payment-path defects involving timezone-shifted installment dates, incorrect installment amounts, and donation) Tj T* -0.082867 Tw (allocation. Added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and remediated an SSRF/input-injection) Tj T* 0 Tw (vector.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 341 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Delivered WCAG/ADA accessibility fixes and GA4 purchase-funnel analytics. Built Nightwatch/Selenium regression coverage) Tj T* (integrated into deployment pipelines and maintained tests through third-party widget changes.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 312 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL -0.085231 Tw (\177 Worked across 20+ repositories; extracted shared payment-schedule utilities, consolidated translations across four frontends,) Tj T* 0 Tw (and coordinated production deployments and cross-team code reviews.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 293 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Frontend Engineer, Contract | Supercoder / Learning Crew) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 278 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Remote / South Korea | Jan 2026 - Mar 2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 249 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL -0.100357 Tw (\177 Introduced React Query patterns, improved frontend architecture and API integration, and supported Swagger documentation) Tj T* 0 Tw (and engineering handoff.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 230 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Frontend Developer, Contract | Supercoder / Hooaah) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 215 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Remote / South Korea | Nov 2023 - Jul 2024) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 186 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Built reusable React modules, integrated backend functionality, and improved component organization for continued product) Tj T* (development.) Tj T* ET
+Q
+Q
+ 
+
+endstream
 endobj
 5 0 obj
 <<
-/Contents 10 0 R /MediaBox [ 0 0 595 842 ] /Parent 8 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
-
->> 
-  /Type /Page
+/F1 6 0 R
+/F2 7 0 R
 >>
 endobj
 6 0 obj
 <<
-/PageMode /UseNone /Pages 8 0 R /Type /Catalog
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 7 0 obj
 <<
-/Author (\(anonymous\)) /CreationDate (D:20260908205101+05'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260908205101+05'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
 >>
 endobj
 8 0 obj
 <<
-/Count 2 /Kids [ 4 0 R 5 0 R ] /Type /Pages
+/Contents 9 0 R
+/MediaBox [ 0 0 595 842 ]
+/Parent 2 0 R
+/Resources <<
+/Font 5 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
 >>
 endobj
 9 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 2539
+/Length 5182
 >>
 stream
-Gatm<gN)%.&q/)-oV6%d>tEeQm)pla4AeRkCf=9cg<'dk65!aj?pI&eVWQq51e>aZ,YOK1;_D8g8>:%#:ES5e/q/3B2bJq`0<'$WP98.l9n'k5Vr`MBb;]+j3A6HJ_g8^Rkka>5:Oi=")h,W,pDsaSmD0p<!1Tg,k5RckYI+34Dt*/=iM$747d!/6J@2OaHbN(<gtSCCJ:-NK&?lg6GM!tpjt`g?jlC<.99[?m@%_X_(WL@_oA&9n]ZFQb1?d3>-,\Ct]<k/X$;1ue;lJ=0K.rI#fg]ON)Z#ZcUkhX(Y2s0Hr`XQRgugGON66EC`tF:XiIC=D^jia^$aJ5OH?:D"<DeV^?G%9`eFSg.o3TcaNNl@gUV;RQNQ:Ear+hK'Q*_d,2Ytkf^Y5$,)8F5(_eu3SHPrlC^NNT-E=]GG7*G=[_pQ"Z(uhNS.^sT_Slm+YB_9QQo@32g)044:n@*a>m9Y;p`sptk<lfIPhV<OjS1eJKQA2/P;\ju4&(8hi[_"\P0_/rR:a;iVLlhq84<S#mInP,;9L120''*^nTb*nfV2F\PM=2K/,H3L3W[kBBU.!,),a%8HMF=Fc<jZT7QqN))8<Sdf/rC!gSJm*8fXf?EQ'Ke!73md9*%=ncRP[+fQ@Cb9hqftJMFAspU>WH$kHOMBfM\WAPVJH/?l.R>+VV8I#"uMZVp7MMFXs56D9IS-ZaCLD26n?i;/UJl,PL"XS%.iR>**'Sc)K2tV*hDCG%5goUV?m:bLuO*omAf';#&dmYm;:Cp)4P5A(E=PREsl:N<JcKm)7lZ:<*"TU]4G6l.E&nUK]7nhP1V)X$pY>U*rYknq07Ah7"o!`[Htrn+4O)\rA9$%t550HN7/'"<7u\74^<J4N8L9Mi52M\3**V1Wad&BJ>W&b)MN,UZuT$IHYLB0Aa<#<J@Y%<5MsS+js@A3jWPIRBeE25E@ERHn\9g%7\2"6bB`KS9"'bM^pdUhpFq:r/gYaKm$XuPn@8PCUMiIr6&d.$"Y;:AQ-OLaq&Ya'*mpAI:%dF:$5&udA\\+dT.Bs(7FZP!K.5S=/_Bn05uEhpF%SD"39^()j)t34;b^LO-=i^^gb-N*6XmHFO%#cN]nQj715)(T4l3+eJ,E?F;^Mo_T&n/UL*G6Z1BLTkF\p)Qa;2!bjOW"lY.SJ&,]aD0%tr1V(l>o<6q!/d3uaAOjXQul'J`I'#ZV5c$e*Kq!s>5T1k1KQXHsCQhoaoMi9`cl;CN8Ia8^p#^4%nnEER3+aG2Y=qo,L08GOqOm?(m_\[eZUA#Kr-/F7k$p_ku+XfL^$/DK"9I(&C6ZWmQ,N%+*8nVpN;E(=4.Vt\lj8)8WTX,n`)qO&DTX?tloN<>+TsIcW!\)]'2<Om0!+!Scn8p(/fShH4:)1:lRZf//#ps9&P@\6KP->bn;+B-]Wi\CS3V=e8XV7r__\?\*`Z`h"2_ohL)T/]"F*N5&>:POD1eq<%GOHASQ*[l/-WS*!W\_k-Eh50OK9;Rb;N]up<LIT%l/t#*d$^\/a!-'S=Dh[n^Rr(A30(-"c&kc;A]1g,Otc`0nO-1HeFU9-DXF!adg-AZ/47a'5bB-C9,;!1TPmk7=cJ&-PEB*ZHriaFAb4.6q`cfa>WT&&WlnE_lCPhNemMU;Q'%_T*^d_UOq\=kUS<<c@B#2jgFP5akWq7k*M%`N$h'>[3O1UK&KXl=>8(k-Hc7;kRh])J;e(UA&_D_)\#,F("0apie!6'T51U6InU5>_,R\VG@Qe-SeWdJu:C,>tCR=>V8Y*801^g$_,>VS**J3IA8sN!Q;QJHM[4C<0X2[gtLb=UmE="hB.8k"gZn?baVN45$8E'0uHoQ0;'<gUl\@-)aF"]Z#7D^G1?aXc7,1/?tnCBKfiVE;%BFVOXfq;\T2)9lEE6&%)_sm(,B8t]4kddlP3q]D6_)j2_e"#k*c[td\&:^9HIdKf]-M2,idi.nX_jp@u`YI^YAsl>s/s8Ad&A;>2n.2<!!oC0>@baHl`]t,+TX)S@gB<i][E]FkEHhsb!MIuoJ\A/'Dlr0L.pJe9ArBGr@K=B_f`r71^r11HgUtnb4ob3/bMcqBoW"[LbMQrLm^\Do#6l:j-C7&m@S1)B5WKcs1-AHN`Q>Zc<R_\>CrqN7$s@Zkg7.u'UBCr?8Ms?TqldCbbT0HM(Z'5'<;d00;461sA;E?Z[7[=NXi8<t]Fdg3]MnBp3FTc!kL@Z51iZJF*opJdZ3$!s=su?'_*C7:E59]-^SaOb2#9!(5@dBB$+ctj^o[YJHpeLN14`!,'';WF'(fNa;?.ZNg[,G>:U$63!F-Y0l/\oKE0N<q1&7g`jkDNe+4;O`H!oup8#.ZpjCV/Bp,NWF>/%3LHOuYUdMhGmEok:7bi3_7>np*r;nHA>Rpkg'Jau5H>Z;'E#mVQZ(1Q%^L&_!Z`;]hQ[GGoRHN:iOS+("(ag0h%J%le"Wkn<=/+e6iG:4W#W?.TAiMo)SJn&*`MX%"VeN1PK@lq^2"ANX;&XiKjeeQmF%EMWJ_uN<54ZPY'[Dqk$^S]'nHN~>endstream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+BT /F1 8 Tf 9.6 TL ET
+.501961 .501961 .501961 rg
+BT 1 0 0 1 550.552 24 Tm (2) Tj T* ET
+q
+1 0 0 1 46 794 cm
+q
+.090196 .219608 .321569 rg
+BT 1 0 0 1 0 4 Tm /F2 10 Tf 14 TL (TARIQ ALI | EXPERIENCE CONTINUED) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 775 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Full-Stack Engineer | Fiverr, Independent Client Work) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 760 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Remote | Dec 2018 - Apr 2023) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 731 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Delivered client applications from discovery and architecture through deployment, CMS functionality, integrations, and) Tj T* (support.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 702 cm
+q
+BT 1 0 0 1 0 15 Tm 12 TL /F1 9 Tf 0 0 0 rg (\177 Built photography booking and portfolio tools, employee/course/content management for HD Electric & Solar, and a) Tj T* (CMS-driven real-estate platform for MoonsCreekProperties.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 683 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Full-Stack Engineer | ShopDev) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 668 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Lahore, Pakistan | Oct 2021 - Apr 2022) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 639 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Led Shopdesk inventory and sales workflows, including product management, sales calculations, barcode support, and) Tj T* (offline sales.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 610 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Refactored modules and collaborated with the CTO and project manager on architecture; built React extensions integrated) Tj T* (with Shopify for Amyris.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 591 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Senior Full-Stack Engineer | Renesis Tech) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 576 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Lahore, Pakistan | Jul 2021 - Aug 2021) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 547 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL -0.085 Tw (\177 Delivered Photobank in two months using React/Next.js, Node.js, and AWS. Implemented Rekognition face search across S3) Tj T* 0 Tw (galleries and Lambda-based thumbnails with photographer watermarks.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 530 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (\177 Designed a reusable Stripe microservice for payment capabilities across company projects.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 511 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Senior Full-Stack Engineer / Team Lead | Innovation Insight) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 496 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Lahore, Pakistan | Oct 2019 - Jul 2021) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 467 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Led major development and architecture of Vonza, an all-in-one SaaS for courses, stores, websites, memberships, funnels,) Tj T* (and marketing.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 438 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Led up to 10 engineers and worked with the CEO/CTO on subdomain routing, a website builder, payments, security) Tj T* (middleware, and scalability.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 409 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Built YayMaker real-time/chat workflows and Google Maps features; implemented payment logging, recovery workflows, and) Tj T* (platform protection.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 390 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Senior Full-Stack Engineer | RSglowtech) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 375 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Lahore, Pakistan | Dec 2020 - May 2021) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 346 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Led teams of 6-8 across healthcare appointment/patient tracking and an artist-share trading platform. Integrated third-party) Tj T* (APIs and scheduled Node.js utilities, with regular client demos.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 327 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3.5 Tm /F2 9.5 Tf 13 TL (Full-Stack Engineer | Vvork Cloud Technologies) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 312 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Lahore, Pakistan | Jan 2018 - Dec 2018) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 283 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (\177 Built student-management portal features, resolved complex defects, and collaborated with solution architects on technical) Tj T* (requirements.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 260 cm
+q
+.090196 .219608 .321569 rg
+BT 1 0 0 1 0 4 Tm /F2 10 Tf 14 TL (EDUCATION AND CERTIFICATIONS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 243 cm
+q
+BT 1 0 0 1 0 3 Tm 12 TL /F1 9 Tf 0 0 0 rg (Bachelor of Science in Computer Science | NCBA) Tj (&) Tj (E, Lahore | 2022) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 226 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Microsoft Exam 480: Programming in HTML5 with JavaScript and CSS3 | 2019) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 209 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Additional training: Full-Stack Engineering \(Mangtas\); English Speaking \(Emmersion\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 186 cm
+q
+.090196 .219608 .321569 rg
+BT 1 0 0 1 0 4 Tm /F2 10 Tf 14 TL (LANGUAGES) Tj T* ET
+Q
+Q
+q
+1 0 0 1 46 169 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (English: Professional working proficiency) Tj T* ET
+Q
+Q
+ 
+
+endstream
 endobj
 10 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 2109
+/Author (\050anonymous\051)
+/CreationDate (D\07220260908205101\05305\04700\047)
+/Creator (\050unspecified\051)
+/Keywords ()
+/ModDate (D\07220260908205101\05305\04700\047)
+/Producer (ReportLab PDF Library \055 \050opensource\051)
+/Subject (\050unspecified\051)
+/Title (\050anonymous\051)
+/Trapped /False
 >>
-stream
-Gatm<gN)%,&:Ml+lr1sh82<bB/2^4\/>qdcZ>1n'4-LJ:KLA3N_#gDQFo(Vk!%HSm>c:C\SfqfSG5(?p]d]`WJ"\sD):@1bSR-s`7^QE!f^&0CGtHKHX60E.hB$eDc.u,Z#Y0N/^-:kBr?,oep\R7ShiB1;Y`)>Of<kHDb9*j:5@<ebl4)rne:S4?f*OoI%Wrs8K->BK;:ltL^(MBHPBV<b;&IgF>-gtij4i7j1qoL-h_b<1ApQP.c6lPZ>gJbCq>9FP,PAh2mn4>>qR$W\]D&_MDPt6N3O5!ufl]>/.Oj,1P/UXojr9G(Y+be\gi9H#1s6P=E#eG3-;rLFDb=r]L("-e+gi12NLUTC1ZF^5WoVNRc=;``E(Fga(E/W;f;kqkqK.GiVj)T<cd&1S>)5;7\;%t[6Ah.q6KNsQ>%Np('.^`%,F0^qFI\5Oa(;)-Q)Rg7-7(WAWa1AJ>;Wlod(7A0.tL8hmTLn,P&GFoZXp!"Z(.2].$Q>G?>r20K6mYu%HW+V&&//>[M#mA,#tIkqBFbC8u\r62\([E]N.oY.[?/NN+Wn0kGPSb[';"2%@:TVB,ba9d9:8\q4+;p%aZDs+)%>ne#h=]#?^I]44/"`:7<ulk,)[FCEXQPlHG*q;Xh[oF2#?8Wo1H&gj&cO(j98Jfo&fEkPWW+E%lYtK.gB-1iLbNgBrJVU$4Tj/V1eE/k96Mh9gFeq%>6eYS(i^i#KC:WeRp98T*`5.D(o2hH3CiZ:ZY_$E]I@IN7HMo6SVk>ff-G=(&a73&Qs!P/h=NQLJ_hTg+F.[k)d^h=<F]JI!Y[Qu"@]cse:I>:H?a*o)Z/794Gt/?`iPC\<N+ctQDR(E*.*<\?m[3CFP\%)*[Iq>6E<%iCjRlX-pR3<kPNSJH[]rK4QCr@;Ls4;ZB61j*_^cAaNbjDjHbIPuEWrr,g;"+RA2]C]k*SNT'Mm@Y+$n_jD9WdJ<7f8A[UcrAjPKK_%f6^=q3F^[A&,As&JT]dBnF;Hk+j51UmR\?N;:.*M_hl9C'/=d)@!a3(1!jPiX@q]lG0S)#j_kc?s1b?7Lfd^Ft'f1qNVH((IR?49mgd?caI-s9=SM@f@_MmpSgLK7_,;qQ`@&U2m@4TH6JRVl'b(PJcopl(DbKtjOVM%VqfLheS3B/nQ=ChZZGP_e/@Vto"4?`pu=b`Zi&s-pqkN^?X)I*>O>5HJ-NF%:kF_)%Q@.p2Q?EJkC1]*k$BC$9oOmkFb<T0\CbrDEJoKhSg0hYmUrRrH6.ob%&@ga+!\hSiq`n!GGn+k,aF'N9=>B+LX;;`P?+#uha5L_<db&WZ38/lKCHX1R=3s)];0ML,-Q8`6TZc=tq0<4X9qUAPZ7,(\A6tHe[ND[i%#Om(BXuIdKj$c=GMk%hQ``.)2QAHlLr1;To\lOTp<Khjo#9%u.T<6/65M5C]D*_\kiKPP(^m).qTuf?2hC5iuJmP\`dj/QabiT@k7qHD,UJbqe%_h)M\G<(/5OPq7.12JYR=h%"!pu$GQ0.sicsd+#as.q*HXn#iO*OoI"&XS2]jeUKH.qY2X2>MVQ`*NrVW+73gt0[_+YM4\*4,Nn_JimMG$:PHg!H!&hV!t?2K^auR^-d.qZ.bhF&ir41o8*+JRf<QBc$R&J^EGHR;&%YE]`G0qo2)rOLg7Wl<MbbK)n^8GF&HuPJ<-%,B!m8jp_4I%Lg<?W2dcF,Iml4@@c#%0RAkT"NP+?h!^+aXc\*W31B32XR,B0I^BI8+dgA=;VSiA9&A5q;VC^AN,Yk8@r;1fR#8@'fC085^t=6PF"537.M%3Zr6IuKVpumFBYSTf^RlUFkO0eYjm7:gj7t]Mp$HdC0rsao]]sk"-Pk78G>EY15]V]:K7mII?niuEoR[BS=CI4Nh#!T'PIG&"rT&b11i6)a$p6Y\<(54+#DO`f9rW8,e'Ak1HGeYg_Q&L;bqbd80_=JheRcLUjtH(]/RjZIF^Lal(0tQS3:bebDaI7R2,4c]s0uHPMo]>M:JXu)CZEI!/!b*GAj3qX@in6MYeq0FD<n+K/45JQY`Gu9Aqn4>9+^E04Fd*Sr,1e2;)ig79,_=n5&5%0m2aqGRgjQn*058M.Ag2H!68Q/d/~>endstream
+endobj
+11 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [ 46 735 89.515 746 ]
+/Border [ 0 0 0 ]
+/A <<
+/S /URI
+/Type /Action
+/URI (https\072\057\057tariqali\056dev)
+>>
+/P 3 0 R
+>>
 endobj
 xref
-0 11
+0 12
 0000000000 65535 f 
-0000000061 00000 n 
-0000000102 00000 n 
-0000000209 00000 n 
-0000000321 00000 n 
-0000000514 00000 n 
-0000000708 00000 n 
-0000000776 00000 n 
-0000001056 00000 n 
-0000001121 00000 n 
-0000003751 00000 n 
+0000000015 00000 n 
+0000000083 00000 n 
+0000000148 00000 n 
+0000000356 00000 n 
+0000005875 00000 n 
+0000005916 00000 n 
+0000006023 00000 n 
+0000006135 00000 n 
+0000006324 00000 n 
+0000011558 00000 n 
+0000011883 00000 n 
 trailer
 <<
-/ID 
-[<a9c4de29e1d6c8551613f9d4b9c163bf><a9c4de29e1d6c8551613f9d4b9c163bf>]
-% ReportLab generated PDF document -- digest (opensource)
-
-/Info 7 0 R
-/Root 6 0 R
-/Size 11
+/Size 12
+/Root 1 0 R
+/Info 10 0 R
+/ID [ <a9c4de29e1d6c8551613f9d4b9c163bf> <a9c4de29e1d6c8551613f9d4b9c163bf> ]
 >>
 startxref
-5952
+12059
 %%EOF
