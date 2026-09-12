@@ -44,6 +44,7 @@ export const skillGroups = [
     title: "Backend & APIs",
     items: [
       "Node.js",
+      "Nest.js",
       "Express.js",
       "REST APIs",
       "GraphQL",
