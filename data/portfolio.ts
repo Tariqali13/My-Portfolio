@@ -91,24 +91,19 @@ export const skillGroups = [
 
 export const projects = [
   {
-    slug: "speech-recognition",
-    name: "Speech Recognition",
-    eyebrow: "AI API integration",
-    summary: "A project using Claude and OpenAI APIs to simplify speech recognition.",
-    impact: ["Used Claude and OpenAI APIs in a speech-recognition simplification project."],
-    tech: ["Claude", "OpenAI APIs"],
-    featured: false,
-  },
-  {
     slug: "paciolan",
     name: "Paciolan",
     eyebrow: "Enterprise ticketing",
     summary:
       "Production engineering for a large-scale event-ticketing ecosystem, spanning customer-facing experiences, APIs, service integrations and automated testing.",
     impact: [
-      "Built installment payment schedules across cart, order and checkout, with a production rollout to seven Division-I athletic programs.",
-      "Shipped all-included pricing used during onsales of approximately 3,000 tickets in 15 minutes, with 4,000+ users queued and no reported issues.",
-      "Migrated order confirmation to GraphQL and delivered add-on purchasing, accessibility improvements and automated regression coverage.",
+      "Built RSD Payment Schedules across cart, order, checkout and confirmation for season-ticket donations; launched to seven Division-I athletic programs and executed the production feature-flag rollout.",
+      "Delivered all-included pricing across event pages, seat maps and mini-cart, used during onsales of approximately 3,000 tickets in 15 minutes with 4,000+ users queued and no reported issues.",
+      "Migrated order confirmation from direct REST calls to GraphQL, authored fundraising resolvers and built add-on purchasing with validation, fee breakdowns and email handling.",
+      "Resolved payment defects involving timezones, installment amounts and donation allocation. Added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and remediated an SSRF/input-injection vector.",
+      "Delivered WCAG/ADA accessibility fixes and GA4 purchase analytics; integrated Nightwatch/Selenium regression tests into deployment pipelines.",
+      "Worked across 20+ repositories, extracted shared payment utilities, consolidated translations across four frontends, and coordinated production deployments and cross-team code reviews.",
+      "Created reusable Claude skills for project setup, merge request creation, code integration, repository research and implementation planning, supporting AI-assisted development workflows.",
     ],
     tech: ["React", "Next.js", "TypeScript", "Node.js", "GraphQL", "AWS", "Nightwatch", "Prometheus", "Grafana"],
     featured: true,
@@ -181,6 +176,15 @@ export const projects = [
       "Maintained long-term client communication through demos and iterative delivery.",
     ],
     tech: ["React", "Next.js", "Node.js", "CMS", "Payments", "Third-party APIs"],
+    featured: false,
+  },
+  {
+    slug: "speech-recognition",
+    name: "Speech Recognition",
+    eyebrow: "AI API integration",
+    summary: "A project using Claude and OpenAI APIs to simplify speech recognition.",
+    impact: ["Used Claude and OpenAI APIs in a speech-recognition simplification project."],
+    tech: ["Claude", "OpenAI APIs"],
     featured: false,
   },
 ];
