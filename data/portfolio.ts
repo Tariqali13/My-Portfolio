@@ -86,10 +86,19 @@ export const skillGroups = [
       "WCAG Accessibility",
     ],
   },
-  { title: "AI-assisted Development", items: ["Codex", "Claude"] },
+  { title: "AI-assisted Development", items: ["ChatGPT", "OpenAI Codex", "Cursor", "Claude", "OpenAI APIs", "Reusable AI Skills"] },
 ];
 
 export const projects = [
+  {
+    slug: "speech-recognition",
+    name: "Speech Recognition",
+    eyebrow: "AI API integration",
+    summary: "A project using Claude and OpenAI APIs to simplify speech recognition.",
+    impact: ["Used Claude and OpenAI APIs in a speech-recognition simplification project."],
+    tech: ["Claude", "OpenAI APIs"],
+    featured: false,
+  },
   {
     slug: "paciolan",
     name: "Paciolan",
@@ -189,6 +198,7 @@ export const experience = [
       "Resolved payment defects involving timezones, installment amounts and donation allocation. Added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and remediated an SSRF/input-injection vector.",
       "Delivered WCAG/ADA accessibility fixes and GA4 purchase analytics; integrated Nightwatch/Selenium regression tests into deployment pipelines.",
       "Worked across 20+ repositories, extracted shared payment utilities, consolidated translations across four frontends, and coordinated production deployments and cross-team code reviews.",
+      "Created reusable Claude skills for project setup, merge request creation, code integration, repository research and implementation planning, supporting AI-assisted development workflows.",
     ],
     tech: ["React", "Next.js", "TypeScript", "Node.js", "AWS", "GraphQL", "Jest"],
   },
