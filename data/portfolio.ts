@@ -20,7 +20,7 @@ export const profile = {
 export const stats = [
   { value: "8+", label: "Years in software engineering" },
   { value: "10", label: "Engineers led on a product team" },
-  { value: "80%", label: "Approx. Vonza platform development led" },
+  { value: "80%", label: "Approx. initial Vonza platform implemented" },
   { value: "Global", label: "Remote client & team experience" },
 ];
 
@@ -115,10 +115,14 @@ export const projects = [
     summary:
       "A multi-module platform for online courses, stores, websites, memberships, funnels and marketing - built while working closely with company leadership.",
     impact: [
-      "Led a team of up to 10 engineers.",
-      "Owned architecture and a substantial portion of the production platform.",
-      "Built high-impact capabilities including subdomain routing, website building, payments and security middleware.",
-    ],
+      "Built Vonza architecture from scratch and personally implemented approximately 80% of the initial production platform, continuing development after launch.",
+      "Created the courses module to support creators delivering online learning through the platform.",
+      "Built the e-commerce store module as part of the platform for selling products online.",
+      "Developed marketing funnels and a website builder so businesses could create their online presence and sales journeys in one platform.",
+      "Worked directly with the CEO and CTO on architecture, subdomain routing and scalability.",
+      "Implemented payment logging, reCAPTCHA and security middleware to support reliable platform operations.",
+      "Led a team of 10 engineers across platform development and module delivery."
+],
     tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS", "Stripe"],
     featured: true,
   },
@@ -267,10 +271,16 @@ export const experience = [
     location: "Lahore, Pakistan",
     dates: "Oct 2019 - Jul 2021",
     bullets: [
-      "Led major development of Vonza and a team of up to 10 engineers.",
-      "Worked directly with the CEO/CTO on architecture, subdomain routing, a website builder, payments, security and scalability.",
+      "Built Vonza architecture from scratch and personally implemented approximately 80% of the initial production platform, continuing development after launch.",
+      "Created the courses module to support creators delivering online learning through the platform.",
+      "Built the e-commerce store module as part of the platform for selling products online.",
+      "Developed marketing funnels and a website builder so businesses could create their online presence and sales journeys in one platform.",
+      "Worked directly with the CEO and CTO on architecture, subdomain routing and scalability.",
+      "Implemented payment logging, reCAPTCHA and security middleware to support reliable platform operations.",
+      "Led a team of 10 engineers across platform development and module delivery.",
       "Built core features for YayMaker including chat, Google Maps and supporting services.",
-    ],
+      "Contributed to an online fitness streaming platform with music features during video calls."
+],
     tech: ["React", "Next.js", "Node.js", "AWS", "Stripe", "Google Maps"],
   },
   {
