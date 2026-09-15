@@ -113,12 +113,13 @@ export const projects = [
     name: "Vonza",
     eyebrow: "All-in-one SaaS",
     summary:
-      "A multi-module platform for online courses, stores, websites, memberships, funnels and marketing - built while working closely with company leadership.",
+      "An all-in-one business platform spanning website building, marketing funnels, meeting scheduling, online courses and e-commerce - built while working closely with company leadership.",
     impact: [
+      "Built core modules across Vonza: the website builder, marketing funnels, meeting scheduling, online courses and e-commerce.",
       "Built Vonza architecture from scratch and personally implemented approximately 80% of the initial production platform, continuing development after launch.",
-      "Created the courses module to support creators delivering online learning through the platform.",
-      "Built the e-commerce store module as part of the platform for selling products online.",
-      "Developed marketing funnels and a website builder so businesses could create their online presence and sales journeys in one platform.",
+      "Developed the website builder and marketing funnel module to support business websites and sales journeys.",
+      "Created the meeting scheduling module as part of the integrated business platform.",
+      "Created the online courses module and built the e-commerce store module.",
       "Worked directly with the CEO and CTO on architecture, subdomain routing and scalability.",
       "Implemented payment logging, reCAPTCHA and security middleware to support reliable platform operations.",
       "Led a team of 10 engineers across platform development and module delivery."
@@ -271,10 +272,11 @@ export const experience = [
     location: "Lahore, Pakistan",
     dates: "Oct 2019 - Jul 2021",
     bullets: [
+      "Built core modules across Vonza: the website builder, marketing funnels, meeting scheduling, online courses and e-commerce.",
       "Built Vonza architecture from scratch and personally implemented approximately 80% of the initial production platform, continuing development after launch.",
-      "Created the courses module to support creators delivering online learning through the platform.",
-      "Built the e-commerce store module as part of the platform for selling products online.",
-      "Developed marketing funnels and a website builder so businesses could create their online presence and sales journeys in one platform.",
+      "Developed the website builder and marketing funnel module to support business websites and sales journeys.",
+      "Created the meeting scheduling module as part of the integrated business platform.",
+      "Created the online courses module and built the e-commerce store module.",
       "Worked directly with the CEO and CTO on architecture, subdomain routing and scalability.",
       "Implemented payment logging, reCAPTCHA and security middleware to support reliable platform operations.",
       "Led a team of 10 engineers across platform development and module delivery.",
