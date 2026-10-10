@@ -1,14 +1,13 @@
 type Props = {
-  eyebrow: string;
+  id?: string;
   title: string;
   copy?: string;
 };
 
-export function SectionHeading({ eyebrow, title, copy }: Props) {
+export function SectionHeading({ id, title, copy }: Props) {
   return (
     <div className="sectionHeading">
-      <p className="eyebrow">{eyebrow}</p>
-      <h2>{title}</h2>
+      <h2 id={id}>{title}</h2>
       {copy ? <p className="sectionCopy">{copy}</p> : null}
     </div>
   );

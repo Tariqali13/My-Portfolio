@@ -1,12 +1,11 @@
 export const profile = {
   name: "Tariq Ali",
-  role: "Full-Stack Software Engineer",
-  headline:
-    "I build reliable, scalable web products with React, Next.js, TypeScript, Node.js and AWS.",
+  role: "Senior Full-Stack Software Engineer",
+  headline: "I build the parts of a product that have to work under pressure.",
   intro:
-    "Full-Stack Software Engineer with 8+ years of experience delivering SaaS, ticketing, e-commerce, fintech, healthcare, CMS and AI-enabled products for international teams. I work across product engineering, architecture, APIs, cloud services, testing and technical leadership.",
+    "8+ years building SaaS, ticketing, e-commerce, healthcare and AI products for teams in the US, Europe and Asia. Most recently: checkout, payments and onsale features for a ticketing platform used by Division I athletic programs.",
   location: "Lahore, Pakistan",
-  availability: "Available immediately for remote roles; open to relocation with sponsorship",
+  availability: "Available now: remote or relocation",
   email: "tariqali99.ta@gmail.com",
   phoneDisplay: "+92 310 4832079",
   whatsapp: "https://wa.me/923104832079",
@@ -17,230 +16,262 @@ export const profile = {
   resume: "/Tariq-Ali-Resume.pdf",
 };
 
-export const stats = [
-  { value: "8+", label: "Years in software engineering" },
-  { value: "10", label: "Engineers led on a product team" },
-  { value: "80%", label: "Approx. initial Vonza platform implemented" },
-  { value: "Global", label: "Remote client & team experience" },
+/** Fields printed on the hero ticket. */
+export const ticketFields = [
+  { label: "Experience", value: "8+ years" },
+  { label: "Led", value: "Teams of up to 10" },
+  { label: "Based in", value: "Lahore, Pakistan" },
+  { label: "Works", value: "Remote or relocation" },
+];
+
+export type Shot = { src: string; alt: string };
+
+export type LiveProject = {
+  slug: string;
+  name: string;
+  tagline: string;
+  summary: string;
+  points: string[];
+  results?: { value: string; label: string }[];
+  tech: string[];
+  demo: string;
+  demoHost: string;
+  code: string;
+  shot: Shot;
+};
+
+/** Open-source projects with public code and a running demo. */
+export const liveProjects: LiveProject[] = [
+  {
+    slug: "onsale",
+    name: "Onsale",
+    tagline: "A ticket onsale engine for when thousands of people want the same seats",
+    summary:
+      "A virtual waiting room, all-or-nothing seat holds and idempotent checkout, rebuilt in the open from the problems I worked on in production ticketing.",
+    points: [
+      "Redis + Lua waiting room admits buyers in arrival order at a fixed rate, so the seat map and payments only see as many shoppers as they can serve.",
+      "Picking four seats holds all four or none in one atomic step; holds expire on their own.",
+      "Checkout is idempotent: a double-click or dropped connection replays the first result instead of charging twice. A Postgres constraint makes selling a seat twice impossible.",
+    ],
+    results: [
+      { value: "696/696", label: "seats sold in ~20 s to 2,000 simulated buyers" },
+      { value: "0", label: "seats sold twice, audited in Postgres after every run" },
+      { value: "0", label: "unexpected errors in 24,251 requests" },
+    ],
+    tech: ["TypeScript", "Fastify", "Redis + Lua", "PostgreSQL", "React", "k6", "Prometheus", "Grafana"],
+    demo: "https://onsalerender.netlify.app",
+    demoHost: "onsalerender.netlify.app",
+    code: "https://github.com/Tariqali13/onsale",
+    shot: { src: "/work/onsale-seat-map.webp", alt: "Onsale seat map with four seats held and a five-minute hold timer" },
+  },
+  {
+    slug: "voicebrief",
+    name: "VoiceBrief",
+    tagline: "Meeting notes you can check, with every item linked to where it was said",
+    summary:
+      "Record a meeting and get decisions, action items and open questions. Ask questions across all your meetings and get answers with a citation for every claim.",
+    points: [
+      "Every note carries evidence: the model cites transcript lines, and a grounding pass drops anything that cites lines that don't exist or names an owner who never spoke.",
+      "Hybrid retrieval (keyword + vector, fused by rank) answers questions only from cited excerpts, or says plainly that something wasn't discussed.",
+      "Transcripts are treated as data, not instructions, and an evaluation harness scores the pipeline against hand-labelled meetings.",
+    ],
+    tech: ["Next.js 16", "TypeScript", "Whisper", "LLM structured output", "Embeddings / RAG", "pgvector"],
+    demo: "https://voicebrief.onrender.com",
+    demoHost: "voicebrief.onrender.com",
+    code: "https://github.com/Tariqali13/voicebrief",
+    shot: { src: "/work/voicebrief-meeting.webp", alt: "VoiceBrief meeting notes beside a ruled transcript with the cited line highlighted" },
+  },
+  {
+    slug: "mediavault",
+    name: "MediaVault",
+    tagline: "A shared media library for creative teams, built as a real multi-tenant SaaS",
+    summary:
+      "Teams upload pictures, video and PDFs straight to storage, find them by title or tag, collect selects and send clients expiring links.",
+    points: [
+      "Each team's data is isolated by Postgres row-level security, so a careless query returns nothing rather than another team's files.",
+      "Uploads go straight from the browser to object storage with signed policies; a background worker checks each file really is what it claims and renders thumbnails.",
+      "One role and permission table is shared by the API and the UI, and a test spells out every role and action pair.",
+    ],
+    tech: ["TypeScript", "Node.js", "PostgreSQL RLS", "S3 / MinIO", "Background jobs", "React"],
+    demo: "https://media-vault-tariqali.netlify.app",
+    demoHost: "media-vault-tariqali.netlify.app",
+    code: "https://github.com/Tariqali13/MediaVault",
+    shot: { src: "/work/mediavault-library.webp", alt: "MediaVault library showing a justified gallery of a studio's pictures" },
+  },
+];
+
+export type ClientProject = {
+  slug: string;
+  name: string;
+  kind: string;
+  role: string;
+  summary: string;
+  points: string[];
+  tech: string[];
+  link?: { href: string; label: string };
+  /** Full-page screenshot, scrolled inside a browser frame. */
+  page?: Shot;
+};
+
+/** Production and client work. Code is private; screenshots and descriptions only. */
+export const clientWork: ClientProject[] = [
+  {
+    slug: "paciolan",
+    name: "Paciolan",
+    kind: "Enterprise ticketing",
+    role: "Full-stack engineer, FullStack Labs, 2022–2026",
+    summary:
+      "Checkout, payments and onsale features for a ticketing platform behind the box offices of US college athletics and live events.",
+    points: [
+      "Built payment schedules for season-ticket donations across cart, order, checkout and confirmation; launched to seven Division I athletic programs behind a feature flag I rolled out.",
+      "Shipped all-included ticket, donation and fee pricing across event pages, seat maps and mini-cart, used in onsales of ~3,000 tickets in 15 minutes with 4,000+ people queued and no reported issues.",
+      "Moved order confirmation from REST to GraphQL, added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and closed an SSRF/input-injection hole.",
+    ],
+    tech: ["React", "Next.js", "TypeScript", "Node.js", "GraphQL", "AWS", "Nightwatch", "Prometheus", "Grafana"],
+  },
+  {
+    slug: "vonza",
+    name: "Vonza",
+    kind: "All-in-one creator platform",
+    role: "Senior engineer and team lead, Innovation Insight, 2019–2021",
+    summary:
+      "Website builder, funnels, scheduling, online courses and e-commerce in one platform for creators and small businesses.",
+    points: [
+      "Designed the architecture from scratch and wrote roughly 80% of the first production platform.",
+      "Led up to 10 engineers and worked with the CEO and CTO on subdomain routing, payments and scaling.",
+      "Added payment logging and recovery, reCAPTCHA and security middleware.",
+    ],
+    tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS", "Stripe"],
+    link: { href: "https://www.vonza.com", label: "vonza.com" },
+    page: { src: "/work/vonza-full.webp", alt: "Vonza marketing site: the easiest way for creators to monetize their business" },
+  },
+  {
+    slug: "yaymaker",
+    name: "YayMaker",
+    kind: "Events marketplace",
+    role: "Senior engineer, Innovation Insight",
+    summary: "Corporate, private and public event booking from the team behind Paint Nite.",
+    points: [
+      "Built real-time chat and Google Maps features and the services behind them.",
+      "Contributed to an online fitness streaming product with music during video calls.",
+    ],
+    tech: ["React", "Node.js", "Real-time chat", "Google Maps"],
+    link: { href: "https://www.yaymaker.com", label: "yaymaker.com" },
+    page: { src: "/work/yay-full.webp", alt: "YayMaker home page: simple and stress-free event planning" },
+  },
+  {
+    slug: "alisa",
+    name: "Alisa Schenk Photography",
+    kind: "Photography and doula business",
+    role: "Freelance, end to end",
+    summary: "Portfolio, online booking, contact workflows and a blog for a birth photographer and doula.",
+    points: ["Designed, built, deployed and supported the site, including the booking and content tools the owner uses herself."],
+    tech: ["React", "CMS", "Booking", "Netlify"],
+    link: { href: "https://alisaschenkbirth.com", label: "alisaschenkbirth.com" },
+    page: { src: "/work/alisa-full.webp", alt: "Alisa Schenk Photography home page with a carousel of family photos" },
+  },
+  {
+    slug: "hs-electric",
+    name: "H&S Electric & Solar",
+    kind: "Electrical and solar contractor",
+    role: "Freelance, end to end",
+    summary: "Marketing site plus the internal tools the company runs on: employees, hiring, training courses and content.",
+    points: ["Built employee, hiring, course and content management behind a staff login."],
+    tech: ["React", "Node.js", "CMS"],
+    page: { src: "/work/hd-full.webp", alt: "H&S Electric and Solar home page with a residential solar installation" },
+  },
+  {
+    slug: "tiffany",
+    name: "Tiffany Hinkson Photography",
+    kind: "Family photography",
+    role: "Freelance, end to end",
+    summary: "Portfolio, pricing and booking for a family photographer.",
+    points: ["Built the portfolio, pricing and booking pages and handed over content editing to the owner."],
+    tech: ["React", "CMS"],
+    page: { src: "/work/tiffany-full.webp", alt: "Tiffany Hinkson Photography home page" },
+  },
+  {
+    slug: "photobank",
+    name: "Photobank",
+    kind: "Face search for event photos",
+    role: "Senior engineer, Renesis Tech, 2021",
+    summary:
+      "Runners and riders upload a selfie and find every photo of themselves across an event's galleries.",
+    points: [
+      "Delivered the product end to end in two months.",
+      "AWS Rekognition face search across S3 galleries; Lambda thumbnails with per-photographer watermarks.",
+      "Designed a reusable Stripe payments microservice used across company projects.",
+    ],
+    tech: ["Next.js", "Node.js", "AWS Rekognition", "S3", "Lambda", "Stripe"],
+  },
 ];
 
 export const skillGroups = [
   {
     title: "Frontend",
-    items: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "JavaScript",
-      "Redux",
-      "Zustand",
-      "React Query",
-      "HTML5",
-      "CSS3",
-      "Material UI",
-    ],
+    items: ["React", "Next.js", "TypeScript", "JavaScript", "Redux", "Zustand", "React Query", "Tailwind CSS", "Material UI", "Accessibility (WCAG)"],
   },
   {
-    title: "Backend & APIs",
-    items: [
-      "Node.js",
-      "Nest.js",
-      "Express.js",
-      "REST APIs",
-      "GraphQL",
-      "Apollo",
-      "Microservices",
-      "Authentication",
-      "Stripe",
-      "PayPal",
-    ],
+    title: "Backend and APIs",
+    items: ["Node.js", "NestJS", "Express", "Fastify", "GraphQL / Apollo", "REST", "Microservices", "Auth", "Stripe", "PayPal"],
   },
   {
-    title: "Cloud & Data",
-    items: [
-      "AWS S3",
-      "AWS Lambda",
-      "EC2",
-      "CloudFront",
-      "PostgreSQL",
-      "MySQL",
-      "MongoDB",
-      "Redis",
-      "Docker",
-    ],
+    title: "Data and cloud",
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "AWS S3", "Lambda", "EC2", "CloudFront", "Rekognition", "Docker"],
   },
   {
-    title: "Quality & Delivery",
-    items: [
-      "Jest",
-      "React Testing Library",
-      "Enzyme",
-      "Nightwatch",
-      "CI/CD",
-      "GitHub Actions",
-      "GitLab CI",
-      "Agile",
-      "Code Review",
-      "Prometheus",
-      "Grafana",
-      "WCAG Accessibility",
-    ],
-  },
-  { title: "AI-assisted Development", items: ["ChatGPT", "OpenAI Codex", "Cursor", "Claude", "OpenAI APIs", "Reusable AI Skills"] },
-];
-
-export const projects = [
-  {
-    slug: "paciolan",
-    name: "Paciolan",
-    eyebrow: "Enterprise ticketing",
-    summary:
-      "Production engineering for a large-scale event-ticketing ecosystem, spanning customer-facing experiences, APIs, service integrations and automated testing.",
-    impact: [
-      "Built RSD Payment Schedules across cart, order, checkout and confirmation for season-ticket donations; launched to seven Division-I athletic programs and executed the production feature-flag rollout.",
-      "Delivered all-included pricing across event pages, seat maps and mini-cart, used during onsales of approximately 3,000 tickets in 15 minutes with 4,000+ users queued and no reported issues.",
-      "Migrated order confirmation from direct REST calls to GraphQL, authored fundraising resolvers and built add-on purchasing with validation, fee breakdowns and email handling.",
-      "Resolved payment defects involving timezones, installment amounts and donation allocation. Added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and remediated an SSRF/input-injection vector.",
-      "Delivered WCAG/ADA accessibility fixes and GA4 purchase analytics; integrated Nightwatch/Selenium regression tests into deployment pipelines.",
-      "Worked across 20+ repositories, extracted shared payment utilities, consolidated translations across four frontends, and coordinated production deployments and cross-team code reviews.",
-      "Created reusable Claude skills for project setup, merge request creation, code integration, repository research and implementation planning, supporting AI-assisted development workflows.",
-    ],
-    tech: ["React", "Next.js", "TypeScript", "Node.js", "GraphQL", "AWS", "Nightwatch", "Prometheus", "Grafana"],
-    featured: true,
+    title: "Quality and delivery",
+    items: ["Jest", "Vitest", "React Testing Library", "Nightwatch", "Selenium", "k6", "GitHub Actions", "GitLab CI", "Prometheus", "Grafana"],
   },
   {
-    slug: "vonza",
-    name: "Vonza",
-    eyebrow: "All-in-one SaaS",
-    summary:
-      "An all-in-one business platform spanning website building, marketing funnels, meeting scheduling, online courses and e-commerce - built while working closely with company leadership.",
-    impact: [
-      "Built core modules across Vonza: the website builder, marketing funnels, meeting scheduling, online courses and e-commerce.",
-      "Built Vonza architecture from scratch and personally implemented approximately 80% of the initial production platform, continuing development after launch.",
-      "Developed the website builder and marketing funnel module to support business websites and sales journeys.",
-      "Created the meeting scheduling module as part of the integrated business platform.",
-      "Created the online courses module and built the e-commerce store module.",
-      "Worked directly with the CEO and CTO on architecture, subdomain routing and scalability.",
-      "Implemented payment logging, reCAPTCHA and security middleware to support reliable platform operations.",
-      "Led a team of 10 engineers across platform development and module delivery."
-],
-    tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS", "Stripe"],
-    featured: true,
-  },
-  {
-    slug: "photobank",
-    name: "Photobank / Face Search",
-    eyebrow: "AI-enabled media platform",
-    summary:
-      "End-to-end image platform using cloud services to organize photography, generate thumbnails and enable face-based image discovery.",
-    impact: [
-      "Delivered the application in a two-month timeframe.",
-      "Integrated AWS Rekognition for face-search across S3-hosted image galleries.",
-      "Built Lambda processing for thumbnails and photographer-specific watermarks.",
-    ],
-    tech: ["Next.js", "Node.js", "AWS S3", "AWS Lambda", "AWS Rekognition", "Stripe"],
-    featured: true,
-  },
-  {
-    slug: "shopdesk",
-    name: "Shopdesk",
-    eyebrow: "Inventory & point of sale",
-    summary:
-      "Inventory and sales software with product management, offline workflows, barcode support and complex sales calculations.",
-    impact: [
-      "Led development of core inventory and sales workflows.",
-      "Refactored existing modules for improved maintainability and performance.",
-      "Worked with engineering leadership on offline sales and barcode capabilities.",
-    ],
-    tech: ["React", "Node.js", "SQL", "Offline-first", "Barcode"],
-    featured: true,
-  },
-  {
-    slug: "baseline",
-    name: "Baseline",
-    eyebrow: "Trading-style product",
-    summary:
-      "A shares-style marketplace built around artists, external music data and scheduled back-end processing.",
-    impact: [
-      "Integrated external artist data from music platforms.",
-      "Built Node.js scheduling utilities for frequently refreshed values.",
-      "Presented progress directly to clients and led engineers across parallel projects.",
-    ],
-    tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS", "Stripe"],
-    featured: false,
-  },
-  {
-    slug: "freelance-platforms",
-    name: "International Client Platforms",
-    eyebrow: "Independent full-stack work",
-    summary:
-      "CMS, booking, real-estate and business-management applications delivered end to end for international clients.",
-    impact: [
-      "Owned discovery, architecture, development, deployment and ongoing support.",
-      "Built booking, content, hiring, course and real-estate management workflows.",
-      "Maintained long-term client communication through demos and iterative delivery.",
-    ],
-    tech: ["React", "Next.js", "Node.js", "CMS", "Payments", "Third-party APIs"],
-    featured: false,
-  },
-  {
-    slug: "speech-recognition",
-    name: "Speech Recognition",
-    eyebrow: "AI API integration",
-    summary: "A project using Claude and OpenAI APIs to simplify speech recognition.",
-    impact: ["Used Claude and OpenAI APIs in a speech-recognition simplification project."],
-    tech: ["Claude", "OpenAI APIs"],
-    featured: false,
+    title: "AI",
+    items: ["OpenAI and Claude APIs", "Structured output", "RAG / embeddings", "Evaluation harnesses", "Claude Code", "Codex", "Cursor"],
   },
 ];
 
 export const experience = [
   {
     role: "Full-Stack Software Engineer",
-    company: "Paciolan (via FullStack Labs)",
-    location: "Remote / United States",
-    dates: "May 2022 - Sep 2026",
+    company: "FullStack Labs (client: Paciolan)",
+    location: "Remote, United States",
+    dates: "May 2022 – Sep 2026",
     bullets: [
-      "Built RSD Payment Schedules across cart, order, checkout and confirmation for season-ticket donations; launched to seven Division-I athletic programs and executed the production feature-flag rollout.",
-      "Delivered all-included pricing across event pages, seat maps and mini-cart, used during onsales of approximately 3,000 tickets in 15 minutes with 4,000+ users queued and no reported issues.",
-      "Migrated order confirmation from direct REST calls to GraphQL, authored fundraising resolvers and built add-on purchasing with validation, fee breakdowns and email handling.",
-      "Resolved payment defects involving timezones, installment amounts and donation allocation. Added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and remediated an SSRF/input-injection vector.",
-      "Delivered WCAG/ADA accessibility fixes and GA4 purchase analytics; integrated Nightwatch/Selenium regression tests into deployment pipelines.",
-      "Worked across 20+ repositories, extracted shared payment utilities, consolidated translations across four frontends, and coordinated production deployments and cross-team code reviews.",
-      "Created reusable Claude skills for project setup, merge request creation, code integration, repository research and implementation planning, supporting AI-assisted development workflows.",
+      "Built payment schedules for season-ticket donations across cart, order, checkout and confirmation; launched to seven Division I athletic programs and ran the production feature-flag rollout.",
+      "Shipped all-included ticket, donation and fee pricing across event pages, seat maps and mini-cart, used during onsales of about 3,000 tickets in 15 minutes with 4,000+ users queued and no reported issues.",
+      "Migrated order confirmation to GraphQL, wrote fundraising resolvers, and delivered add-on purchasing with quantity validation, item comments, fee breakdowns and confirmation emails.",
+      "Fixed installment-date, payment-amount and donation-allocation defects; added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and remediated an SSRF/input-injection vector.",
+      "Delivered WCAG/ADA accessibility fixes and GA4 purchase analytics; built Nightwatch/Selenium regression tests in CI/CD.",
+      "Worked across 20+ repositories, extracted shared payment utilities, consolidated translations across four frontends, and coordinated production deployments and code reviews.",
+      "Created reusable Claude skills for project setup, merge requests, code integration, repository research and implementation planning.",
     ],
-    tech: ["React", "Next.js", "TypeScript", "Node.js", "AWS", "GraphQL", "Jest"],
+    tech: ["React", "Next.js", "TypeScript", "Node.js", "GraphQL", "AWS", "Jest", "Nightwatch"],
   },
   {
-    role: "Frontend Engineer - Contract",
+    role: "Frontend Engineer (part-time contract)",
     company: "Supercoder / Learning Crew",
-    location: "Remote / South Korea",
-    dates: "Jan 2026 - March 2026",
+    location: "Remote, South Korea",
+    dates: "Jan 2026 – Mar 2026",
     bullets: [
-      "Introduced React Query patterns and improved front-end architecture for a React-based product.",
-      "Supported Swagger-oriented API documentation and engineering handoff through codebase cleanup and documentation.",
+      "Introduced React Query patterns and standardized API integration; contributed to frontend architecture, Swagger API documentation, cleanup and engineering handoff.",
     ],
-    tech: ["React", "React Query", "Swagger", "REST APIs"],
+    tech: ["React", "React Query", "Swagger"],
   },
   {
-    role: "Frontend Developer - Contract",
+    role: "Frontend Developer (part-time contract)",
     company: "Supercoder / Hooaah",
-    location: "Remote / South Korea",
-    dates: "Nov 2023 - Jul 2024",
-    bullets: [
-      "Built and enhanced reusable React modules and integrated back-end functionality into product experiences.",
-      "Improved component reuse and code organization for continued feature development.",
-    ],
-    tech: ["React", "JavaScript", "REST APIs"],
+    location: "Remote, South Korea",
+    dates: "Nov 2023 – Aug 2024",
+    bullets: ["Built reusable React modules, integrated backend functionality, and turned product and design requirements into features."],
+    tech: ["React", "JavaScript", "REST"],
   },
   {
-    role: "Full-Stack Engineer",
-    company: "Fiverr - Independent Client Work",
+    role: "Full-Stack Engineer (freelance)",
+    company: "Fiverr, independent client work",
     location: "Remote",
-    dates: "Dec 2018 - Apr 2023",
+    dates: "Dec 2018 – Apr 2023",
     bullets: [
-      "Delivered end-to-end applications for international clients, covering architecture, development, deployment, CMS, integrations and support.",
-      "Built photography, solar/electrical business and real-estate platforms with booking, content and administration workflows.",
+      "Delivered web applications from discovery and architecture through deployment, CMS, integrations and ongoing support.",
+      "Built Alisa Schenk Photography (portfolio, booking, blog) and employee, hiring, course and content tools for H&S Electric & Solar; developed a CMS-driven real-estate platform for MoonsCreekProperties.",
     ],
     tech: ["React", "Next.js", "Node.js", "CMS", "Payments"],
   },
@@ -248,10 +279,10 @@ export const experience = [
     role: "Full-Stack Engineer",
     company: "ShopDev",
     location: "Lahore, Pakistan",
-    dates: "Oct 2021 - Apr 2022",
+    dates: "Oct 2021 – Apr 2022",
     bullets: [
-      "Led Shopdesk inventory and sales workflows including calculations, barcode functionality and offline sales.",
-      "Built customized React extensions for Amyris and integrated them with Shopify-based applications.",
+      "Led Shopdesk inventory and sales workflows: product management, sales calculations, barcodes and offline sales.",
+      "Built customized React extensions integrated with Shopify applications for Amyris.",
     ],
     tech: ["React", "Node.js", "SQL", "Shopify"],
   },
@@ -259,10 +290,10 @@ export const experience = [
     role: "Senior Full-Stack Engineer",
     company: "Renesis Tech",
     location: "Lahore, Pakistan",
-    dates: "Jul 2021 - Aug 2021",
+    dates: "Jul 2021 – Aug 2021",
     bullets: [
-      "Delivered Photobank end to end using React/Next.js, Node.js and AWS.",
-      "Implemented Rekognition face search, Lambda-based image processing and a reusable Stripe microservice.",
+      "Delivered Photobank end to end in two months: Rekognition face search across S3 galleries and Lambda thumbnails with photographer watermarks.",
+      "Designed a reusable Stripe microservice used across company projects.",
     ],
     tech: ["Next.js", "Node.js", "AWS", "Rekognition", "Stripe"],
   },
@@ -270,54 +301,44 @@ export const experience = [
     role: "Senior Full-Stack Engineer / Team Lead",
     company: "Innovation Insight",
     location: "Lahore, Pakistan",
-    dates: "Oct 2019 - Jul 2021",
+    dates: "Oct 2019 – Jul 2021",
     bullets: [
-      "Built core modules across Vonza: the website builder, marketing funnels, meeting scheduling, online courses and e-commerce.",
-      "Built Vonza architecture from scratch and personally implemented approximately 80% of the initial production platform, continuing development after launch.",
-      "Developed the website builder and marketing funnel module to support business websites and sales journeys.",
-      "Created the meeting scheduling module as part of the integrated business platform.",
-      "Created the online courses module and built the e-commerce store module.",
-      "Worked directly with the CEO and CTO on architecture, subdomain routing and scalability.",
-      "Implemented payment logging, reCAPTCHA and security middleware to support reliable platform operations.",
-      "Led a team of 10 engineers across platform development and module delivery.",
-      "Built core features for YayMaker including chat, Google Maps and supporting services.",
-      "Contributed to an online fitness streaming platform with music features during video calls."
-],
-    tech: ["React", "Next.js", "Node.js", "AWS", "Stripe", "Google Maps"],
+      "Built Vonza's architecture from scratch and its core modules: website builder, funnels, scheduling, online courses and e-commerce.",
+      "Led up to 10 engineers and worked with the CEO and CTO on subdomain routing, payments, security middleware and scale.",
+      "Built YayMaker real-time chat and Google Maps features; contributed to an online fitness streaming product.",
+    ],
+    tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS", "Stripe"],
   },
   {
-    role: "Senior Full-Stack Engineer",
+    role: "Senior Full-Stack Engineer (part-time contract)",
     company: "RSglowtech",
     location: "Lahore, Pakistan",
-    dates: "Dec 2020 - May 2021",
+    dates: "Dec 2020 – May 2021",
     bullets: [
-      "Led teams of 6–8 across healthcare and trading-style products.",
-      "Integrated third-party music/data APIs and built scheduled Node.js processing utilities.",
+      "Led teams of 6–8 on a healthcare appointment and patient-tracking system and Baseline, a platform for trading artist shares.",
+      "Integrated music and data APIs and built scheduled Node.js processing jobs; presented weekly demos to clients.",
     ],
-    tech: ["React", "Next.js", "Node.js", "MongoDB", "APIs"],
+    tech: ["React", "Next.js", "Node.js", "MongoDB"],
   },
   {
     role: "Full-Stack Engineer",
     company: "Vvork Cloud Technologies",
     location: "Lahore, Pakistan",
-    dates: "Jan 2018 - Dec 2018",
-    bullets: [
-      "Developed a student-management portal, delivered new features and resolved complex defects.",
-      "Collaborated with solution architects to align technical architecture with business requirements.",
-    ],
+    dates: "Jan 2018 – Dec 2018",
+    bullets: ["Built student-management portal features and worked with solution architects to match architecture to business needs."],
     tech: ["JavaScript", "React", "Node.js"],
   },
 ];
 
 export const education = {
-  degree: "Bachelor of Science in Computer Science",
+  degree: "BS Computer Science",
   school: "NCBA&E",
   location: "Lahore, Pakistan",
   year: "2022",
 };
 
 export const certifications = [
-  "Microsoft Exam 480 - Programming in HTML5 with JavaScript and CSS3 (2019)",
-  "Full-Stack Engineering - Mangtas (2023)",
-  "English Speaking - Emmersion (2023)",
+  "Microsoft Exam 480: Programming in HTML5 with JavaScript and CSS3 (2019)",
+  "Full-Stack Engineering, Mangtas",
+  "English Speaking, Emmersion",
 ];

@@ -6,9 +6,12 @@ Built with **Next.js, React, TypeScript, Node.js route handlers, MongoDB/Mongoos
 
 ## Live Site
 
-**https://tariqali13.com**
+**https://tariqali.dev**
 
 ## Highlights
+
+- Live open-source projects (Onsale, VoiceBrief, MediaVault) with screenshots, demo and code links
+- Production and client work shown in browser frames that scroll through full-page screenshots
 
 - Modern responsive portfolio homepage
 - Dedicated résumé experience

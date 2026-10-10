@@ -1,254 +1,185 @@
 import Link from "next/link";
-import {
-  ArrowRight,
-  BriefcaseBusiness,
-  CheckCircle2,
-  Download,
-  Github,
-  Linkedin,
-  Mail,
-  MapPin,
-  MessageCircle,
-  Sparkles,
-} from "lucide-react";
+import { Download, Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ClientProject } from "@/components/ClientProject";
+import { LiveProject } from "@/components/LiveProject";
 import { SectionHeading } from "@/components/SectionHeading";
-import {
-  experience,
-  profile,
-  projects,
-  skillGroups,
-  stats,
-} from "@/data/portfolio";
+import { Ticket } from "@/components/Ticket";
+import { clientWork, experience, liveProjects, profile, skillGroups } from "@/data/portfolio";
 
 export default function HomePage() {
-  const featuredProjects = projects.filter((project) => project.featured);
-
   return (
     <main id="main">
-      <section className="hero section">
+      <section className="hero">
         <div className="container heroGrid">
-          <div className="heroContent">
-            <div className="availabilityPill">
-              <span className="availabilityDot" />
+          <div className="heroCopy">
+            <p className="availability">
+              <span className="availabilityDot" aria-hidden="true" />
               {profile.availability}
-            </div>
-            <p className="eyebrow">Full-stack product engineering</p>
-            <h1>
-              Building web products that are
-              <span className="gradientText"> fast, dependable and built to scale.</span>
-            </h1>
-            <p className="heroCopy">{profile.intro}</p>
-
-            <div className="heroActions">
-              <a className="button buttonPrimary" href="#contact">
-                Discuss an opportunity <ArrowRight size={17} />
+            </p>
+            <h1>{profile.headline}</h1>
+            <p className="heroIntro">{profile.intro}</p>
+            <div className="actions">
+              <a className="button buttonPrimary" href="#live">
+                See live projects
               </a>
               <a className="button buttonGhost" href={profile.resume} download>
-                <Download size={17} />
+                <Download size={17} aria-hidden="true" />
                 Download résumé
               </a>
             </div>
-
-            <div className="heroMeta">
-              <span>
-                <MapPin size={16} />
-                {profile.location}
-              </span>
-              <a href={profile.linkedin} target="_blank" rel="noreferrer">
-                <Linkedin size={16} />
-                LinkedIn
-              </a>
-              <a href={profile.github} target="_blank" rel="noreferrer">
-                <Github size={16} />
-                GitHub
-              </a>
-            </div>
+            <ul className="heroLinks">
+              <li>
+                <a href={profile.github} target="_blank" rel="noreferrer">
+                  <Github size={16} aria-hidden="true" />
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href={profile.linkedin} target="_blank" rel="noreferrer">
+                  <Linkedin size={16} aria-hidden="true" />
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href={profile.gmail} target="_blank" rel="noreferrer">
+                  <Mail size={16} aria-hidden="true" />
+                  {profile.email}
+                </a>
+              </li>
+            </ul>
           </div>
-
-          <aside className="heroPanel" aria-label="Professional snapshot">
-            <div className="panelGlow" />
-            <div className="codeLabel">tariq.profile</div>
-            <pre className="codeBlock" aria-hidden="true">
-{`{
-  role: "Full-Stack Engineer",
-  experience: "8+ years",
-  core: [
-    "React / Next.js",
-    "TypeScript",
-    "Node.js",
-    "AWS"
-  ],
-  focus: "Product + Architecture",
-  mode: "Remote / Relocation"
-}`}
-            </pre>
-            <div className="heroPanelBottom">
-              <Sparkles size={17} />
-              <span>Engineering across product, platform and cloud.</span>
-            </div>
-          </aside>
+          <Ticket />
         </div>
       </section>
 
-      <section className="statsSection" aria-label="Career highlights">
-        <div className="container statsGrid">
-          {stats.map((stat) => (
-            <div className="statCard" key={stat.label}>
-              <strong>{stat.value}</strong>
-              <span>{stat.label}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section" id="work">
+      <section className="section" id="live" aria-labelledby="live-title">
         <div className="container">
           <SectionHeading
-            eyebrow="Selected work"
-            title="Products where engineering quality mattered."
-            copy="A selection of platforms spanning enterprise ticketing, SaaS, AI-enabled media, inventory, payments and client-facing product development."
+            id="live-title"
+            title="Live projects"
+            copy="My production work is in private repositories, so I rebuilt the problems I know best in the open. Each one runs on a public demo, with tests, CI and the design decisions written down."
           />
-
-          <div className="projectGrid">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} />
+          <p className="wakeNote">
+            Demos run on free hosting and sleep when idle. The first load can take about 30 seconds.
+          </p>
+          <div className="liveList">
+            {liveProjects.map((project, index) => (
+              <LiveProject key={project.slug} project={project} priority={index === 0} />
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="sectionCta">
-            <Link className="textLink" href="/projects">
-              View all project highlights <ArrowRight size={16} />
-            </Link>
+      <section className="section sectionTinted" id="work" aria-labelledby="work-title">
+        <div className="container">
+          <SectionHeading
+            id="work-title"
+            title="Production and client work"
+            copy="Products I built or led for employers and clients. Hover or tab onto a screenshot to scroll through the page."
+          />
+          <div className="clientGrid">
+            {clientWork.map((project) => (
+              <ClientProject key={project.slug} project={project} />
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="section sectionMuted">
+      <section className="section" id="skills" aria-labelledby="skills-title">
         <div className="container">
-          <SectionHeading
-            eyebrow="Engineering toolkit"
-            title="Strong across the full product stack."
-            copy="I am most effective in teams where I can connect polished interfaces with practical back-end architecture, cloud services, testing and delivery."
-          />
-          <div className="skillsGrid">
+          <SectionHeading id="skills-title" title="What I work with" />
+          <dl className="skills">
             {skillGroups.map((group) => (
-              <article className="skillCard" key={group.title}>
-                <h3>{group.title}</h3>
-                <div className="tagRow">
-                  {group.items.map((item) => (
-                    <span className="tag" key={item}>
-                      {item}
-                    </span>
-                  ))}
-                </div>
-              </article>
+              <div key={group.title}>
+                <dt>{group.title}</dt>
+                <dd>{group.items.join(", ")}</dd>
+              </div>
             ))}
-          </div>
+          </dl>
         </div>
       </section>
 
-      <section className="section">
+      <section className="section sectionTinted" id="experience" aria-labelledby="experience-title">
         <div className="container">
-          <SectionHeading
-            eyebrow="Experience"
-            title="International product teams, from delivery to technical leadership."
-            copy="Recent roles and representative experience. The complete history is available on the résumé page."
-          />
-
-          <div className="experienceList">
-            {experience.slice(0, 5).map((item) => (
-              <article className="experienceItem" key={`${item.company}-${item.dates}`}>
-                <div className="experiencePeriod">{item.dates}</div>
-                <div className="experienceBody">
+          <SectionHeading id="experience-title" title="Experience" copy="The four most recent roles. The full history is on the résumé page." />
+          <ol className="timeline">
+            {experience.slice(0, 4).map((item) => (
+              <li key={`${item.company}-${item.dates}`}>
+                <p className="timelineDates">{item.dates}</p>
+                <div>
                   <h3>{item.role}</h3>
-                  <p className="experienceCompany">
-                    {item.company} · {item.location}
+                  <p className="timelineCompany">
+                    {item.company}, {item.location}
                   </p>
-                  <ul>
-                    {item.bullets.map((bullet) => (
+                  <ul className="pointList">
+                    {item.bullets.slice(0, 3).map((bullet) => (
                       <li key={bullet}>{bullet}</li>
                     ))}
                   </ul>
-                  <div className="tagRow">
-                    {item.tech.map((tech) => (
-                      <span className="tag tagSmall" key={tech}>
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
                 </div>
-              </article>
+              </li>
             ))}
-          </div>
-
-          <div className="sectionCta">
+          </ol>
+          <div className="actions">
             <Link className="button buttonGhost" href="/resume">
-              Full résumé <ArrowRight size={17} />
+              Full résumé
             </Link>
+            <a className="button buttonGhost" href={profile.resume} download>
+              <Download size={17} aria-hidden="true" />
+              Download PDF
+            </a>
           </div>
         </div>
       </section>
 
-      <section className="section sectionMuted">
-        <div className="container valueGrid">
-          <div>
-            <p className="eyebrow">How I work</p>
-            <h2>Senior-level ownership without losing sight of the user.</h2>
-          </div>
-          <div className="valueList">
-            {[
-              "Own features from technical discovery through production delivery.",
-              "Prefer reusable architecture and clear interfaces over one-off fixes.",
-              "Communicate trade-offs clearly with product, design and business stakeholders.",
-              "Use tests, observability and code review to keep delivery speed sustainable.",
-            ].map((item) => (
-              <div className="valueItem" key={item}>
-                <CheckCircle2 size={19} />
-                <span>{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section contactSection" id="contact">
+      <section className="section" id="contact" aria-labelledby="contact-title">
         <div className="container contactGrid">
-          <div className="contactIntro">
-            <p className="eyebrow">Contact</p>
-            <h2>Have a senior engineering role or a product challenge?</h2>
-            <p>
-              For international full-time roles, relocation opportunities or serious
-              product work, the fastest ways to reach me are WhatsApp and email.
+          <div>
+            <h2 id="contact-title">Hiring for a senior engineer?</h2>
+            <p className="sectionCopy">
+              I&apos;m looking for full-time remote roles or relocation. WhatsApp and email reach me fastest; the form
+              works too.
             </p>
-
-            <div className="contactLinks">
-              <a className="contactLink" href={profile.whatsapp} target="_blank" rel="noreferrer">
-                <span className="contactIcon"><MessageCircle size={20} /></span>
-                <span>
-                  <small>WhatsApp</small>
-                  <strong>{profile.phoneDisplay}</strong>
-                </span>
-                <ArrowRight size={18} />
-              </a>
-
-              <a className="contactLink" href={profile.gmail} target="_blank" rel="noreferrer">
-                <span className="contactIcon"><Mail size={20} /></span>
-                <span>
-                  <small>Email with Gmail</small>
-                  <strong>{profile.email}</strong>
-                </span>
-                <ArrowRight size={18} />
-              </a>
-            </div>
-
-            <div className="contactNote">
-              <BriefcaseBusiness size={17} />
-              <span>Open to remote and relocation opportunities.</span>
-            </div>
+            <ul className="contactLinks">
+              <li>
+                <a href={profile.whatsapp} target="_blank" rel="noreferrer">
+                  <MessageCircle size={20} aria-hidden="true" />
+                  <span>
+                    <small>WhatsApp</small>
+                    {profile.phoneDisplay}
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href={profile.gmail} target="_blank" rel="noreferrer">
+                  <Mail size={20} aria-hidden="true" />
+                  <span>
+                    <small>Email</small>
+                    {profile.email}
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href={profile.linkedin} target="_blank" rel="noreferrer">
+                  <Linkedin size={20} aria-hidden="true" />
+                  <span>
+                    <small>LinkedIn</small>
+                    Tariq Ali
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href={profile.resume} download>
+                  <Download size={20} aria-hidden="true" />
+                  <span>
+                    <small>Résumé</small>
+                    Download PDF
+                  </span>
+                </a>
+              </li>
+            </ul>
           </div>
-
           <ContactForm />
         </div>
       </section>

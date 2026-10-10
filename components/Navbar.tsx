@@ -6,28 +6,32 @@ import { ThemeToggle } from "./ThemeToggle";
 export function Navbar() {
   return (
     <header className="navShell">
-      <nav className="container nav" aria-label="Primary navigation">
-        <Link href="/" className="brand" aria-label="Tariq Ali home">
-          <span className="brandMark">TA</span>
-          <span className="brandText">Tariq Ali</span>
+      <nav className="container nav" aria-label="Primary">
+        <Link href="/" className="brand">
+          Tariq Ali
         </Link>
 
-        <div className="navLinks">
-          <Link href="/#work">Work</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="/resume">Resume</Link>
-          <Link href="/#contact">Contact</Link>
-        </div>
+        <ul className="navLinks">
+          <li>
+            <Link href="/#live">Live projects</Link>
+          </li>
+          <li>
+            <Link href="/#work">Client work</Link>
+          </li>
+          <li>
+            <Link href="/resume">Résumé</Link>
+          </li>
+          <li>
+            <Link href="/#contact">Contact</Link>
+          </li>
+        </ul>
 
         <div className="navActions">
           <ThemeToggle />
-          <a
-            className="button buttonSmall buttonGhost desktopOnly"
-            href={profile.resume}
-            download
-          >
-            <Download size={16} />
-            Resume
+          <a className="button buttonSmall buttonPrimary" href={profile.resume} download>
+            <Download size={16} aria-hidden="true" />
+            <span className="hideSmall">Résumé</span>
+            <span className="srOnly showSmall">Download résumé</span>
           </a>
         </div>
       </nav>

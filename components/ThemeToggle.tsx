@@ -1,39 +1,37 @@
 "use client";
 
 import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 
 type Theme = "light" | "dark";
 
-export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("dark");
+// The theme lives on <html data-theme>, set before first paint by the inline
+// script in layout.tsx. Read it as an external store so the icon always matches.
+function subscribe(onChange: () => void) {
+  const observer = new MutationObserver(onChange);
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  return () => observer.disconnect();
+}
 
-  useEffect(() => {
-    const stored = localStorage.getItem("theme") as Theme | null;
-    const preferred = window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-    const next = stored || preferred;
-    setTheme(next);
-    document.documentElement.dataset.theme = next;
-  }, []);
+const getTheme = (): Theme => (document.documentElement.dataset.theme === "light" ? "light" : "dark");
+
+export function ThemeToggle() {
+  const theme = useSyncExternalStore<Theme>(subscribe, getTheme, () => "dark");
 
   function toggle() {
-    const next = theme === "dark" ? "light" : "dark";
-    setTheme(next);
-    localStorage.setItem("theme", next);
+    const next: Theme = theme === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
+    try {
+      localStorage.setItem("theme", next);
+    } catch {
+      // Private mode or blocked storage: the choice just won't persist.
+    }
   }
 
+  const label = `Switch to ${theme === "dark" ? "light" : "dark"} mode`;
   return (
-    <button
-      className="iconButton"
-      type="button"
-      onClick={toggle}
-      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-      title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
-    >
-      {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+    <button className="iconButton" type="button" onClick={toggle} aria-label={label} title={label}>
+      {theme === "dark" ? <Sun size={18} aria-hidden="true" /> : <Moon size={18} aria-hidden="true" />}
     </button>
   );
 }
