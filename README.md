@@ -10,7 +10,7 @@ Built with **Next.js, React, TypeScript, Node.js route handlers, MongoDB/Mongoos
 
 ## Highlights
 
-- Live open-source projects (Onsale, VoiceBrief, MediaVault, Groundwork) with screenshots, demo and code links
+- Live open-source projects (Onsale, VoiceBrief, MediaVault, Groundwork, ShelfSync) with screenshots, demo and code links
 - Production and client work shown in browser frames that scroll through full-page screenshots
 - Modern responsive portfolio homepage
 - Dedicated résumé experience

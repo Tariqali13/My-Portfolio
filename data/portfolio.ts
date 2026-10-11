@@ -127,6 +127,28 @@ export const liveProjects: LiveProject[] = [
     code: "https://github.com/Tariqali13/3d-groundwork",
     shot: { src: "/work/groundwork-cutfill.webp", alt: "Groundwork showing a cut and fill heat map on terrain with a long section through ground and design" },
   },
+  {
+    slug: "shelfsync",
+    name: "ShelfSync",
+    tagline: "A point of sale that keeps selling offline and never loses or doubles a sale",
+    summary:
+      "Two tills and a back office. Switch a till's network off, sell, switch it back on, or watch both tills sell the last mug while offline and see how the conflict is resolved.",
+    points: [
+      "Tills save every sale to an outbox in IndexedDB first and sync what happened (\"sold 1\"), not stock levels, so sales from several tills never overwrite each other.",
+      "Sync is idempotent and ordered: replays get the server's first answer, and a per-store advisory lock keeps sequence numbers gap-free so no till misses a change.",
+      "A sale that already happened is never refused. If it takes stock below zero it is kept and flagged for a recount, and a recount keeps other tills' sales instead of erasing them.",
+    ],
+    results: [
+      { value: "200", label: "random chaos runs (offline tills, lost and duplicated requests) that all converge" },
+      { value: "0", label: "sales lost or counted twice across 24 concurrent syncs" },
+      { value: "22", label: "tests against a real Postgres, run in CI" },
+    ],
+    tech: ["React", "TypeScript", "IndexedDB", "Express", "PostgreSQL", "Netlify Functions", "Vitest"],
+    demo: "https://shelf-sync.netlify.app",
+    demoHost: "shelf-sync.netlify.app",
+    code: "https://github.com/Tariqali13/ShelfSync",
+    shot: { src: "/work/shelfsync-tills.webp", alt: "ShelfSync with two tills and a back office asking for a recount after both tills sold the last mug" },
+  },
 ];
 
 export type ClientProject = {
