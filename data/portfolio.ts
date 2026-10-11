@@ -124,7 +124,7 @@ export const liveProjects: LiveProject[] = [
     tech: ["TypeScript", "three.js", "Web Workers", "React", "LandXML", "DXF", "Vitest"],
     demo: "https://groundwork-3d.onrender.com",
     demoHost: "groundwork-3d.onrender.com",
-    code: "https://github.com/Tariqali13/3d-project-demo",
+    code: "https://github.com/Tariqali13/3d-groundwork",
     shot: { src: "/work/groundwork-cutfill.webp", alt: "Groundwork showing a cut and fill heat map on terrain with a long section through ground and design" },
   },
 ];
