@@ -27,11 +27,18 @@ export function BrowserFrame({ host, shot, scrolls = false, priority = false }: 
         </span>
         <span className="browserUrl">{host}</span>
       </div>
-      <div className="browserView">
+      <div className="browserView" style={shot.background ? { background: shot.background } : undefined}>
         {scrolls ? (
           // Plain img: next/image would constrain a 960×4000 image to the frame's box.
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={shot.src} alt={shot.alt} loading="lazy" decoding="async" />
+          <img
+            src={shot.src}
+            alt={shot.alt}
+            loading="lazy"
+            decoding="async"
+            className={shot.width ? "browserNarrow" : undefined}
+            style={shot.width ? { width: `min(100%, ${shot.width}px)` } : undefined}
+          />
         ) : (
           <Image
             src={shot.src}

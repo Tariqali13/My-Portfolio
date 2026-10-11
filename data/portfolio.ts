@@ -24,7 +24,14 @@ export const ticketFields = [
   { label: "Works", value: "Remote or relocation" },
 ];
 
-export type Shot = { src: string; alt: string };
+export type Shot = {
+  src: string;
+  alt: string;
+  /** Show a narrow screenshot at this width (px), centred, instead of stretching it to fill the frame. */
+  width?: number;
+  /** Fill colour around a narrow screenshot, matched to the page's own background. */
+  background?: string;
+};
 
 export type LiveProject = {
   slug: string;
@@ -128,6 +135,8 @@ export const clientWork: ClientProject[] = [
       "Moved order confirmation from REST to GraphQL, added Prometheus metrics and Grafana alerts, upgraded Node.js 20 to 24, and closed an SSRF/input-injection hole.",
     ],
     tech: ["React", "Next.js", "TypeScript", "Node.js", "GraphQL", "AWS", "Nightwatch", "Prometheus", "Grafana"],
+    link: { href: "https://www.paciolan.com", label: "paciolan.com" },
+    page: { src: "/work/paciolan-full.webp", alt: "Paciolan home page: integrated ticketing, fundraising and marketing for college athletics, performing arts and arenas" },
   },
   {
     slug: "vonza",
@@ -203,6 +212,13 @@ export const clientWork: ClientProject[] = [
       "Designed a reusable Stripe payments microservice used across company projects.",
     ],
     tech: ["Next.js", "Node.js", "AWS Rekognition", "S3", "Lambda", "Stripe"],
+    // The product has since been retired; this is the original screenshot.
+    page: {
+      src: "/work/photobank-full.webp",
+      alt: "Photobank home page: find photos that match your face, with galleries from recent events",
+      width: 300,
+      background: "#080e2e",
+    },
   },
 ];
 
@@ -234,7 +250,7 @@ export const experience = [
     role: "Full-Stack Software Engineer",
     company: "FullStack Labs (client: Paciolan)",
     location: "Remote, United States",
-    dates: "May 2022 – Sep 2026",
+    dates: "May 2022 – Oct 2026",
     bullets: [
       "Built payment schedules for season-ticket donations across cart, order, checkout and confirmation; launched to seven Division I athletic programs and ran the production feature-flag rollout.",
       "Shipped all-included ticket, donation and fee pricing across event pages, seat maps and mini-cart, used during onsales of about 3,000 tickets in 15 minutes with 4,000+ users queued and no reported issues.",

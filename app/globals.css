@@ -711,6 +711,12 @@ html[data-theme="dark"] .buttonPrimary {
   transition: transform 1.2s ease;
 }
 
+/* Narrow screenshots (e.g. a small original) sit centred at their own size, not stretched. */
+.browserScrolls .browserView img.browserNarrow {
+  right: 0;
+  margin-inline: auto;
+}
+
 .browserScrolls:hover .browserView img,
 .browserScrolls:focus-visible .browserView img {
   transform: translateY(calc(-100% + 100cqh));
@@ -725,6 +731,10 @@ html[data-theme="dark"] .buttonPrimary {
   .browserScrolls .browserView {
     overflow-y: auto;
     overscroll-behavior: contain;
+  }
+
+  .browserScrolls .browserView img.browserNarrow {
+    display: block;
   }
 
   .browserScrolls .browserView img {
