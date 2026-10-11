@@ -105,6 +105,28 @@ export const liveProjects: LiveProject[] = [
     code: "https://github.com/Tariqali13/MediaVault",
     shot: { src: "/work/mediavault-library.webp", alt: "MediaVault library showing a justified gallery of a studio's pictures" },
   },
+  {
+    slug: "groundwork",
+    name: "Groundwork",
+    tagline: "Survey and CAD data in the browser, measured to the millimetre",
+    summary:
+      "Open LandXML terrain and DXF site plans, then measure distances, areas, long sections, stockpile volumes and cut/fill against a design. Everything runs on the visitor's machine.",
+    points: [
+      "Coordinates stay in float64 and only move to a local origin at the GPU, so readings at E 411 020.373 are exact instead of snapping to 6 cm.",
+      "Volumes against a plane are exact (triangles are clipped where they cross it), and cut/fill between two surfaces is checked against the exact result in tests.",
+      "A grid index answers a million elevation lookups in 0.2 s; parsing and volumes run in a Web Worker so the 3D view never stalls.",
+    ],
+    results: [
+      { value: "40", label: "tests checked against answers known in advance" },
+      { value: "0.12 s", label: "cut/fill between 29,000 triangles of ground and design" },
+      { value: "0", label: "bytes uploaded: files never leave the browser" },
+    ],
+    tech: ["TypeScript", "three.js", "Web Workers", "React", "LandXML", "DXF", "Vitest"],
+    demo: "https://groundwork-3d.onrender.com",
+    demoHost: "groundwork-3d.onrender.com",
+    code: "https://github.com/Tariqali13/3d-project-demo",
+    shot: { src: "/work/groundwork-cutfill.webp", alt: "Groundwork showing a cut and fill heat map on terrain with a long section through ground and design" },
+  },
 ];
 
 export type ClientProject = {

@@ -17,7 +17,7 @@ export default function ProjectsPage() {
         <div className="container">
           <h1 className="pageTitle">Projects</h1>
           <p className="pageLead">
-            Three open-source projects you can use right now, followed by products I built or led for employers and
+            Four open-source projects you can use right now, followed by products I built or led for employers and
             clients. Client code stays private, so those are shown with screenshots and a description of my part.
           </p>
           <p className="wakeNote">Demos run on free hosting and sleep when idle. The first load can take about 30 seconds.</p>
