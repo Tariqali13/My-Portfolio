@@ -12,7 +12,6 @@ Built with **Next.js, React, TypeScript, Node.js route handlers, MongoDB/Mongoos
 
 - Live open-source projects (Onsale, VoiceBrief, MediaVault) with screenshots, demo and code links
 - Production and client work shown in browser frames that scroll through full-page screenshots
-
 - Modern responsive portfolio homepage
 - Dedicated résumé experience
 - Project and engineering experience showcase
@@ -162,6 +161,6 @@ This repository is intentionally more than a static résumé page. It demonstrat
 **Tariq Ali**  
 Senior Full-Stack Software Engineer
 
-- Portfolio: https://tariqali13.com
+- Portfolio: https://tariqali.dev
 - GitHub: https://github.com/Tariqali13
 - LinkedIn: https://www.linkedin.com/in/tariq-ali-116678156/
