@@ -161,6 +161,15 @@ export default function HomePage() {
                 </a>
               </li>
               <li>
+                <a href={profile.secondaryGmail} target="_blank" rel="noreferrer">
+                  <Mail size={20} aria-hidden="true" />
+                  <span>
+                    <small>Other email</small>
+                    {profile.secondaryEmail}
+                  </span>
+                </a>
+              </li>
+              <li>
                 <a href={profile.linkedin} target="_blank" rel="noreferrer">
                   <Linkedin size={20} aria-hidden="true" />
                   <span>

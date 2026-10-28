@@ -6,10 +6,14 @@ export const profile = {
     "8+ years building SaaS, ticketing, e-commerce, healthcare and AI products for teams in the US, Europe and Asia. Most recently: checkout, payments and onsale features for a ticketing platform used by Division I athletic programs.",
   location: "Lahore, Pakistan",
   availability: "Available now: remote or relocation",
-  email: "tariqali99.ta@gmail.com",
+  // Primary for now (university applications); the main address stays listed as secondary.
+  email: "Tariqali.edu.dev@gmail.com",
+  secondaryEmail: "tariqali99.ta@gmail.com",
   phoneDisplay: "+92 310 4832079",
   whatsapp: "https://wa.me/923104832079",
   gmail:
+    "https://mail.google.com/mail/?view=cm&fs=1&to=Tariqali.edu.dev@gmail.com&su=Opportunity%20for%20Tariq%20Ali",
+  secondaryGmail:
     "https://mail.google.com/mail/?view=cm&fs=1&to=tariqali99.ta@gmail.com&su=Opportunity%20for%20Tariq%20Ali",
   linkedin: "https://www.linkedin.com/in/tariq-ali-116678156/",
   github: "https://github.com/Tariqali13",

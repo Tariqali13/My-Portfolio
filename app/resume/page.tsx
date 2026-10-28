@@ -40,6 +40,7 @@ export default function ResumePage() {
           <div className="resumeContact">
             <span>{profile.location}</span>
             <a href={profile.gmail} target="_blank" rel="noreferrer"><Mail size={15} /> {profile.email}</a>
+            <a href={profile.secondaryGmail} target="_blank" rel="noreferrer"><Mail size={15} /> {profile.secondaryEmail}</a>
             <a href={profile.whatsapp} target="_blank" rel="noreferrer"><MessageCircle size={15} /> {profile.phoneDisplay}</a>
             <a href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin size={15} /> LinkedIn</a>
             <a href={profile.github} target="_blank" rel="noreferrer"><Github size={15} /> GitHub</a>
